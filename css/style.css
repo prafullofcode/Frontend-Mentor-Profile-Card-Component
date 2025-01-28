@@ -24,15 +24,36 @@ main{
     width: 100vw;
     min-height: 100vh;
     background: var(--dark-cyan);
-    background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: -50% 250%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.background{
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: inherit;
+  height: inherit;
+  display: flex;
+}
+/* .bg-pattern{
+    position: fixed;
+    width: 100rem;
+}
+.top-bg-pattern{
+    margin: -33% 0% 0% -9%;
+    transform: rotate(22deg);
+    }
+.bottom-bg-pattern{
+    margin: 30% 0% 0% 45%;
+    transform: rotate(337deg);
+} */
+
 .container{
+    z-index: 999;
     width: 35rem;
     background-color:white;
     border-radius: 1rem;
